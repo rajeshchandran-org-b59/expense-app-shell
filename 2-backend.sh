@@ -54,7 +54,7 @@ dnf install mysql-server -y  &>> $logFile
 stat $? 
 
 echo -n "Injecting $component schema:"
-mysql -h mysql.cloudapps.today -uroot -p$rootPass < /app/schema/backend.sql &>> $logFile
+mysql -h mysql.rajeshapps.site -uroot -p$rootPass < /app/schema/backend.sql &>> $logFile
 stat $? 
 
 echo -n "Starting $component Service:"
